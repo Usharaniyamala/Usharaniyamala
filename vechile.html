@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Vehicle Order</title>
+    <link rel="stylesheet" href="css">
+</head>
+<body>
+    <header>
+        <h1>Rental Vehicle Ordering Service</h1>
+        <nav>
+            <a href="#contactForm">Order Form</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Contact Form -->
+        <section id="contactForm">
+            <h2>Order a Vehicle</h2>
+            <form id="orderForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="vehicleType">Vehicle Type:</label>
+                <input type="text" id="vehicleType" name="vehicleType" required>
+
+                <label for="rentalDuration">Rental Duration (days):</label>
+                <input type="number" id="rentalDuration" name="rentalDuration" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Dynamic Gallery -->
+        <section id="gallery">
+            <h2>Vehicle Gallery</h2>
+            <div id="galleryContainer"></div>
+            <input type="text" id="imageURL" placeholder="Enter image URL">
+            <button onclick="addImage()">Add Image</button>
+        </section>
+    </main>
+    <script src="java script"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+// Form Validation
+document.getElementById('orderForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const vehicleType = document.getElementById('vehicleType').value;
+    const rentalDuration = document.getElementById('rentalDuration').value;
+
+    if (!name || !email || !vehicleType || !rentalDuration) {
+        alert('Please fill out all fields.');
+        return;
+    }
+
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    alert('Order submitted successfully!');
+    
+    // Keep form details intact after submission
+    // No form reset here to maintain the values
+});
+// Dynamic Gallery
+function addImage() {
+    const imageUrl = document.getElementById('imageURL').value;
+
+    if (imageUrl === '') {
+        alert('Please enter an image URL');
+        return;
+    }
+
+    const img = document.createElement('img');
+    img.src = imageUrl;
+    img.alt = 'Vehicle Image';
+    img.onclick = function() {
+        img.remove();
+    };
+
+    document.getElementById('galleryContainer').appendChild(img);
+    document.getElementById('imageURL').value = '';
+}
