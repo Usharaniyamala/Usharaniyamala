@@ -1,0 +1,153 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #1a73e8;
+}
+
+/* Header and Navigation */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #1558b0;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Available Gadgets Section */
+#gadgets {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#carousel {
+    display: flex;
+    overflow: hidden;
+    gap: 15px;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Random Joke Section */
+#random-joke {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#fetch-joke-btn {
+    padding: 10px 20px;
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#fetch-joke-btn:hover {
+    background-color: #ff5722;
+}
+
+/* Quiz Section */
+#quiz {
+    text-align: center;
+}
+
+#quiz-btn-show {
+    padding: 10px 20px;
+    background-color: #81c784;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#quiz-btn-show:hover {
+    background-color: #66bb6a;
+}
+
+#quiz-container {
+    margin-top: 20px;
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#quiz-answer {
+    padding: 10px 20px;
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#quiz-answer:hover {
+    background-color: #2c6b30;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    #carousel {
+        flex-direction: column;
+    }
+}
